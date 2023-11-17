@@ -7,7 +7,7 @@ def roman_numeral(n):
         out = []
         total = n
         for i in range (len(symbol)-1,-1,-1):
-                if (total - value[i]) >= 0:
+                while (total - value[i]) >= 0:
                         total = total - value[i]
                         out.append (symbol[i]) 
         return ''.join(out)
