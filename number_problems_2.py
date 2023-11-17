@@ -13,7 +13,13 @@ def roman_numeral(n):
         return ''.join(out)
 
 def total_roman(n):
-	pass
+ n = roman_numeral(n) 
+ symbol = ['I', 'V', 'X', 'L', 'C', 'D', 'M']
+ value = [1,5,10,50,100,500,1000]
+ for i in range (len(symbol)-1,-1,-1):
+  while (total - value[i]) >= 0:
+   out.append (symbol[i]) 
+
 
 def chisel_strokes(n):
 	pass
